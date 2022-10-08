@@ -45,15 +45,15 @@ class IntrinsicWidthWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('One'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('TwoTwo'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('ThreeThreeThree'),
                 ),

@@ -87,7 +87,7 @@ class _StackWidgetState extends State<StackWidget> {
           height: 300,
           child: Stack(
             fit: fit,
-            overflow: Overflow.clip,
+            clipBehavior: Clip.hardEdge,
             alignment: Alignment.center,
             children: [
               Container(

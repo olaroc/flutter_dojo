@@ -15,13 +15,13 @@ class ValueNotifierWidget extends StatelessWidget {
         MainTitleWidget('ValueNotifier基本使用'),
         SubtitleWidget('在需要响应的Widget中addListener之后，一旦ValueNotifier的值发生改变，就会触发通知'),
         NotifierWidget(data: valueNotifier),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => valueNotifier.value = 'New Value ${Random().nextInt(100)}',
           child: Text('Change'),
         ),
         MainTitleWidget('Custom ValueNotifier'),
         CustomNotifierWidget(data: customNotifier),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => customNotifier.changePeopleName('zhujia'),
           child: Text('Change'),
         ),

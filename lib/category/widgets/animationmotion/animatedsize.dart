@@ -36,7 +36,7 @@ class _AnimatedSizeWidgetState extends State<AnimatedSizeWidget> with SingleTick
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           child: Text('Change Size'),
           onPressed: () {
             setState(() {

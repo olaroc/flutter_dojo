@@ -57,7 +57,7 @@ class _SequenceWidgetState extends State<SequenceWidget> with SingleTickerProvid
             );
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             if (animationController.status == AnimationStatus.completed) {
               animationController.reverse();

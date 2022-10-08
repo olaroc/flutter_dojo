@@ -52,14 +52,14 @@ class _FractionallySizedBoxWidgetState extends State<FractionallySizedBoxWidget>
           SubtitleWidget('size the child to a fraction of the total available space'),
           FractionallySizedBox(
             widthFactor: 1,
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: () {},
               child: Text('100% Text'),
             ),
           ),
           FractionallySizedBox(
             widthFactor: 0.7,
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: () {},
               child: Text('70% Text'),
             ),

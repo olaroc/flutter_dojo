@@ -34,7 +34,7 @@ class _AnimatedSwitcherWidgetState extends State<AnimatedSwitcherWidget> {
                     color: Colors.blue,
                   ),
             duration: Duration(seconds: 2)),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() {
               isVisible = !isVisible;
@@ -63,7 +63,7 @@ class _AnimatedSwitcherWidgetState extends State<AnimatedSwitcherWidget> {
             );
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => switchWidget = Container(
                   width: 100,
@@ -142,7 +142,7 @@ class _AnimatedSwitcherWidgetState extends State<AnimatedSwitcherWidget> {
             style: Theme.of(context).textTheme.headline1,
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           child: const Text('Increment'),
           onPressed: () {
             setState(() => _count += 1);

@@ -11,7 +11,7 @@ class AboutDialogWidget extends StatelessWidget {
     return Column(
       children: <Widget>[
         MainTitleWidget('Show AboutDialog'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showAboutDialog(
               context: context,

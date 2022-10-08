@@ -32,7 +32,7 @@ class NewWidget extends StatelessWidget {
                   );
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () => Provider.of<TestModel>(context, listen: false).add(),
                 child: Text('add'),
               ),

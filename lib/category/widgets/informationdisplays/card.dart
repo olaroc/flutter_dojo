@@ -44,7 +44,7 @@ class CardWidget extends StatelessWidget {
                 data: ButtonBarThemeData(),
                 child: ButtonBar(
                   children: <Widget>[
-                    FlatButton(
+                    TextButton(
                       child: const Text(
                         'Cancel',
                         style: TextStyle(
@@ -54,7 +54,7 @@ class CardWidget extends StatelessWidget {
                       ),
                       onPressed: () {},
                     ),
-                    FlatButton(
+                    TextButton(
                       child: const Text(
                         'OK',
                         style: TextStyle(

@@ -47,7 +47,7 @@ class _IndexedStackWidgetState extends State<IndexedStackWidget> {
         SizedBox(
           height: 20,
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() {
               if (index < 4) {

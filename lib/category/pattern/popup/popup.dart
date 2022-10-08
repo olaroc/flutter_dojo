@@ -58,7 +58,7 @@ class _PopupWidgetState extends State<PopupWidget> {
             child: Column(
               children: <Widget>[
                 MainTitleWidget('通过Overlay实现Popup'),
-                RaisedButton(
+                ElevatedButton(
                   key: locationKey,
                   onPressed: () => showPopupView(),
                   child: Text('showWeixinButtonView()'),

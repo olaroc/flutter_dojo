@@ -9,12 +9,12 @@ class SimpleDialogWidget extends StatelessWidget {
       children: <Widget>[
         MainTitleWidget('SimpleDialog基本使用'),
         SubtitleWidget('SimpleDialogOption: An option used in a [SimpleDialog].'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => showSimpleDialog(context),
           child: Text('Show SimpleDialog'),
         ),
         SubtitleWidget('SimpleDialog with ContentPadding'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => showSimpleDialog2(context),
           child: Text('Show SimpleDialog'),
         ),

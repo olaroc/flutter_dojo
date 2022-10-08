@@ -23,7 +23,7 @@ class _BarWidgetState extends State<BarWidget> {
             AnimBarItem(),
           ],
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => setState(() {}),
           child: Text('Refresh'),
         ),

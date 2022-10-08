@@ -90,7 +90,7 @@ class _BackPanelState extends State<BackPanel> {
           ),
         ),
         Center(
-          child: RaisedButton(
+          child: ElevatedButton(
             child: Text('Tap Me'),
             onPressed: () => widget.frontPanelOpen.value = true,
           ),

@@ -52,11 +52,11 @@ class _ListTopBottomWidgetState extends State<ListTopBottomWidget> {
             ),
             ButtonBar(
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () => scrollToTop(),
                   child: Text('Top'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () => scrollToBottom(),
                   child: Text('Bottom'),
                 ),

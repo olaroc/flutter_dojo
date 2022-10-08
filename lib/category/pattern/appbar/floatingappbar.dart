@@ -39,7 +39,7 @@ class _FloatingAppBarWidgetState extends State<FloatingAppBarWidget> with Single
               child: Container(
                 width: width,
                 child: Stack(
-                  overflow: Overflow.visible,
+                 clipBehavior: Clip.none,
                   children: <Widget>[
                     //浮动图标
                     Positioned(

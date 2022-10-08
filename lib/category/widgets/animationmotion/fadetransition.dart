@@ -42,7 +42,7 @@ class _FadeTransitionWidgetState extends State<FadeTransitionWidget> with Single
             color: Colors.yellow,
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             status ? controller.forward() : controller.reverse();
             status = !status;

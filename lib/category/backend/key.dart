@@ -101,7 +101,7 @@ class _KeyWidgetState extends State<KeyWidget> {
             ),
           ],
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: changeColor,
           child: Text('Change Color'),
         ),
@@ -122,7 +122,7 @@ class _KeyWidgetState extends State<KeyWidget> {
         ),
         SubtitleWidget('GlobalKey传递给其它页面'),
         NewWidget(key: globalCheck),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             globalCheck.currentState.changeState();
           },

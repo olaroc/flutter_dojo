@@ -36,7 +36,7 @@ class _RollCardWithRotationState extends State<RollCardWithRotation> with Single
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        RaisedButton(
+        ElevatedButton(
           onPressed: () async {
             if (_flag) {
               await _controller.reverse();
@@ -116,7 +116,7 @@ class RollCardWithScaleState extends State<RollCardWithScale> with TickerProvide
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() {
               if (_controller.isCompleted || _controller.velocity > 0)

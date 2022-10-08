@@ -38,7 +38,7 @@ class ChildWidgetA extends StatelessWidget {
             children: <Widget>[
               Text('ChildA', style: style),
               Text('Model data: $value', style: style),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () => context.read<TestModel>().addA(),
                 child: Text('add'),
               ),
@@ -69,7 +69,7 @@ class ChildWidgetB extends StatelessWidget {
               );
             },
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => context.read<TestModel>().addB(),
             child: Text('add'),
           ),

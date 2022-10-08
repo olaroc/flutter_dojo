@@ -22,7 +22,7 @@ class _AbsorbPointerWidgetState extends State<AbsorbPointerWidget> {
             }),
         AbsorbPointer(
           absorbing: !canTouch,
-          child: RaisedButton(
+          child: ElevatedButton(
             onPressed: () {},
             child: Text('AbsorbPointer'),
           ),

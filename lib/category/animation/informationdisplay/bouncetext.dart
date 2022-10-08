@@ -46,7 +46,7 @@ class _BounceTextWidgetState extends State<BounceTextWidget> with TickerProvider
             );
           }).toList(),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => startAnim(),
           child: Text('Start'),
         ),

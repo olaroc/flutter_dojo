@@ -68,13 +68,13 @@ class _SizeWidgetState extends State<SizeWidget> {
         ),
         SubtitleWidget('Sliver相关的Widget不能通过Context来获取Size，只能通过PaintBounds来获取'),
         Text(showSize),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => getSizeWithContext());
           },
           child: Text('Get Container Size with Context'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => getSizeWithKey());
           },

@@ -145,7 +145,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           autofocus: true,
           controller: controller,
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => controller.text = 'xys',
           child: Text('输入xys'),
         ),
@@ -156,7 +156,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
         ),
         Row(
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 setState(() => input = controller.text);
               },
@@ -194,7 +194,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
         ),
         Row(
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 if (focusScopeNode == null) {
                   focusScopeNode = FocusScope.of(context);
@@ -203,7 +203,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
               },
               child: Text('移动焦点'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 focusNode1.unfocus();
                 focusNode2.unfocus();

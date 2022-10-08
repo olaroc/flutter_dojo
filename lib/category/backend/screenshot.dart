@@ -25,7 +25,7 @@ class _ScreenshotWidgetState extends State<ScreenshotWidget> {
             'assets/images/book.jpg',
             width: 200,
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               takeScreenshot();
             },

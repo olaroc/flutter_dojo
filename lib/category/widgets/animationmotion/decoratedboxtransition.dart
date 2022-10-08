@@ -69,7 +69,7 @@ class _DecoratedBoxTransitionWidgetState extends State<DecoratedBoxTransitionWid
         ),
         Container(
           margin: EdgeInsets.only(top: 20),
-          child: RaisedButton(
+          child: ElevatedButton(
             onPressed: () {
               if (status) {
                 _controller.forward();

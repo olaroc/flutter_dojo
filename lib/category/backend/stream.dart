@@ -38,7 +38,7 @@ class _StreamWidgetState extends State<StreamWidget> {
     return ListView(
       children: <Widget>[
         MainTitleWidget('Stream的创建'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             stream = Stream.fromFuture(createFromFuture());
             stream.listen(
@@ -59,7 +59,7 @@ class _StreamWidgetState extends State<StreamWidget> {
           child: Text('通过Future创建Stream'),
         ),
         Text(showText1),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             streamController.add('add data from StreamController');
             streamController.stream.listen(
@@ -79,7 +79,7 @@ class _StreamWidgetState extends State<StreamWidget> {
           },
           child: Text('通过StreamController创建Stream'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             streamSink.add('add data from StreamSink');
             streamController.stream.listen(
@@ -101,7 +101,7 @@ class _StreamWidgetState extends State<StreamWidget> {
         ),
         Text(showText2),
         MainTitleWidget('Stream的变换'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             var stream = Stream.fromIterable([1, 2, 3, 4, 5]);
             var reduce = stream.map((value) {
@@ -119,7 +119,7 @@ class _StreamWidgetState extends State<StreamWidget> {
           child: Text('Stream变换[1, 2, 3, 4, 5] add 1 and then sum is 20'),
         ),
         Text(showText3),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             var stream = Stream<int>.fromIterable([1, 2, 3]);
             var streamTransformer = StreamTransformer<int, String>.fromHandlers(
@@ -139,7 +139,7 @@ class _StreamWidgetState extends State<StreamWidget> {
         ),
         Text(showText4),
         MainTitleWidget('StreamBuilder'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             streamController.add('data');
           },

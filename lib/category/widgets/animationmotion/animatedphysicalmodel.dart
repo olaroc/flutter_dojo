@@ -35,7 +35,7 @@ class _AnimatedPhysicalModelWidgetState extends State<AnimatedPhysicalModelWidge
         ),
         Container(
           margin: EdgeInsets.only(top: 20),
-          child: RaisedButton(
+          child: ElevatedButton(
             child: const Text('Change elevation and borderRadius'),
             onPressed: () {
               setState(() => status = !status);

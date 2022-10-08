@@ -36,7 +36,7 @@ class DrawerWidget extends StatelessWidget {
             ListTile(
               title: Text('Title1'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.of(context).pop(),
               child: Text('Dismiss'),
             )
@@ -56,7 +56,7 @@ class DrawerWidget extends StatelessWidget {
             ListTile(
               title: Text('Title1'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.of(context).pop(),
               child: Text('Dismiss'),
             )
@@ -79,11 +79,11 @@ class Body extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           MainTitleWidget('Drawer基本使用'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => Scaffold.of(context).openDrawer(),
             child: Text('Open Drawer'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => Scaffold.of(context).openEndDrawer(),
             child: Text('Open EndDrawer'),
           ),

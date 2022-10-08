@@ -32,7 +32,7 @@ class _ProviderState4WidgetState extends State<ProviderState4Widget> {
                   return Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      RaisedButton(
+                      ElevatedButton(
                         onPressed: () {
                           var model = Provider.of<DataModel>(context, listen: false);
                           model.refreshData();
@@ -40,7 +40,7 @@ class _ProviderState4WidgetState extends State<ProviderState4Widget> {
                         },
                         child: Text('Refresh'),
                       ),
-                      RaisedButton(
+                      ElevatedButton(
                         onPressed: () {
                           context.read<DataModel>().getData(++pageIndex);
                         },

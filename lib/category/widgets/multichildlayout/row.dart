@@ -25,15 +25,15 @@ class _RowWidgetState extends State<RowWidget> {
             child: Row(
               mainAxisSize: sizeSelection,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('RowItem1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('RowItem2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('RowItem3'),
                 ),
@@ -60,15 +60,15 @@ class _RowWidgetState extends State<RowWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: mainAlignSelection,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item3'),
                 ),
@@ -104,11 +104,11 @@ class _RowWidgetState extends State<RowWidget> {
                   height: 100,
                   child: Text('Item1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item3'),
                 ),
@@ -137,15 +137,15 @@ class _RowWidgetState extends State<RowWidget> {
               mainAxisSize: MainAxisSize.max,
               textDirection: textDirectionSelection,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item3'),
                 ),

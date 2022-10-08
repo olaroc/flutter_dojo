@@ -27,11 +27,11 @@ class _SafeAreaWidgetState extends State<SafeAreaWidget> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => setState(() => isEnabled == true ? isEnabled = false : isEnabled = true),
               child: Text(isEnabled ? 'Disable SafeArea' : 'Enable SafeArea'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },

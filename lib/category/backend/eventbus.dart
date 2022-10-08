@@ -31,7 +31,7 @@ class _EventBusWidgetState extends State<EventBusWidget> {
         MainTitleWidget('实现一个简单的EventBus'),
         Text(textValue),
         TextField(controller: controller),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             bus.postEvent('event', controller.text);
           },

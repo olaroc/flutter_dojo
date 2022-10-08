@@ -22,7 +22,7 @@ class SingletonWidget extends StatelessWidget {
           },
         ),
         SizedBox(height: 50),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             singleton.setData(MyData('test${Random().nextInt(100)}'));
           },

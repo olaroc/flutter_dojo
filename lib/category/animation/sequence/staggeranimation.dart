@@ -48,7 +48,7 @@ class _StaggerAnimationWidgetState extends State<StaggerAnimationWidget> with Si
             ),
             child: StaggerAnimation(controller: controller.view),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               _playAnimation();
             },

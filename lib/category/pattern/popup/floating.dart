@@ -7,7 +7,7 @@ class FloatingWidget extends StatelessWidget {
     return Column(
       children: <Widget>[
         MainTitleWidget('Overlay、Draggable实现悬浮窗'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             TestOverLay.show(
               context: context,
@@ -24,7 +24,7 @@ class FloatingWidget extends StatelessWidget {
           },
           child: Text('show floating window'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             TestOverLay.remove();
           },

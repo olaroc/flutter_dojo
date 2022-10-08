@@ -94,7 +94,7 @@ class _AnimatedWidgetWidgetState extends State<AnimatedWidgetWidget> with Single
             borderWidth: _animationOutline,
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             status = !status;
             return status ? _controller.forward() : _controller.reverse();
@@ -113,9 +113,11 @@ class OutlineTransition extends AnimatedWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlineButton(
+    return OutlinedButton(
+      style: OutlinedButton.styleFrom(
+          side: BorderSide(width: borderWidth.value),
+      ),
       onPressed: () {},
-      borderSide: BorderSide(width: borderWidth.value),
       child: Text('Custom AnimatedWidget'),
     );
   }

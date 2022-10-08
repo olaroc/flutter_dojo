@@ -49,7 +49,7 @@ class _PositionWidgetState extends State<PositionWidget> {
           ),
         ),
         Text(showPosition),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => getPosition());
           },

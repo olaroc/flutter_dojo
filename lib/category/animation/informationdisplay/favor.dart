@@ -139,7 +139,7 @@ class _FavorWidgetState extends State<FavorWidget> with TickerProviderStateMixin
     return Center(
       child: Stack(
         alignment: FractionalOffset.center,
-        overflow: Overflow.visible,
+        clipBehavior: Clip.none,
         children: <Widget>[
           getScoreButton(),
           getClapButton(),

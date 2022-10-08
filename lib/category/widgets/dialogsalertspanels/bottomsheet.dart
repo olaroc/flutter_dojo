@@ -19,14 +19,14 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         MainTitleWidget('BottomSheet基本使用'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: _openShowBottomSheet,
           child: Text(
             'showBottomSheet',
             style: TextStyle(fontSize: 16),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             if (bottomSheetController != null) {
               bottomSheetController.close();
@@ -37,14 +37,14 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
             style: TextStyle(fontSize: 16),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: _openShowModalBottomSheet,
           child: Text(
             'showModalBottomSheet: $selection',
             style: TextStyle(fontSize: 16),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: _openShowRoundModalBottomSheet,
           child: Text(
             'show round corner',

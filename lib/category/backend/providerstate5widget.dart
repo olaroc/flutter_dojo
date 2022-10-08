@@ -31,7 +31,7 @@ class PageOne extends StatelessWidget {
         title: Text('Page 1'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Goto page 2, data= ${Provider.of<TestModel>(context).modelValue}'),
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (_) => PageTwo()));
@@ -54,13 +54,13 @@ class PageTwo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('data= ${Provider.of<TestModel>(context).modelValue}'),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Provider.of<TestModel>(context, listen: false).add();
               },
               child: Text('add'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: Text('back'),
             )

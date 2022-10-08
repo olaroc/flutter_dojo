@@ -188,7 +188,7 @@ class TaoBaoItemWidget extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(left: 8),
             child: Stack(
-              overflow: Overflow.clip,
+              clipBehavior: Clip.hardEdge,
               children: <Widget>[
                 Container(
                   height: 150,
@@ -357,7 +357,7 @@ class WeChatItemWidget extends StatelessWidget {
                 ),
               ),
             ],
-            overflow: Overflow.visible,
+           clipBehavior: Clip.none,
           ),
           Container(
             margin: EdgeInsets.only(left: 16),

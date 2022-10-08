@@ -17,11 +17,11 @@ class _WillPopScopeWidgetState extends State<WillPopScopeWidget> {
             title: Text('Are you sure?'),
             content: Text('Do you want to exit an App'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
                 child: Text('No'),
               ),
-              FlatButton(
+              TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
                 child: Text('Yes'),
               ),

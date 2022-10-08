@@ -50,7 +50,7 @@ class _ShowUpWidgetState extends State<ShowUpWidget> with SingleTickerProviderSt
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           child: Text('Show'),
           onPressed: showUp,
         ),

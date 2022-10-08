@@ -62,7 +62,7 @@ class _AnimatedIconWidgetState extends State<AnimatedIconWidget> with TickerProv
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 flag = !flag;
                 flag ? controller.forward() : controller.reverse();

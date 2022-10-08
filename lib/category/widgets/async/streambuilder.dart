@@ -36,7 +36,7 @@ class _StreamBuilderWidgetState extends State<StreamBuilderWidget> {
             return Text('Hit : ${snapshot.data} times');
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             _streamController.sink.add(++_counter);
           },
@@ -49,7 +49,7 @@ class _StreamBuilderWidgetState extends State<StreamBuilderWidget> {
             return Text('Periodic : ${snapshot.data}');
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => isClick = !isClick);
           },

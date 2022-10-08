@@ -27,7 +27,7 @@ class _AnimatedThemeWidgetState extends State<AnimatedThemeWidget> {
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => isLight = !isLight);
           },

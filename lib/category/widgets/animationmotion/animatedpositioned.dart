@@ -40,7 +40,7 @@ class _AnimatedPositionedWidgetState extends State<AnimatedPositionedWidget> {
               ],
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             child: Text('Change position'),
             onPressed: () => setState(() {
               left = status ? 10 : 40;

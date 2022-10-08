@@ -43,13 +43,13 @@ class _DayPickerWidgetState extends State<DayPickerWidget> {
     return ListView(
       children: <Widget>[
         MainTitleWidget('DayPicker基本使用'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             chooseDate(context);
           },
           child: Text('Choose date'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             chooseTime(context);
           },
@@ -58,21 +58,24 @@ class _DayPickerWidgetState extends State<DayPickerWidget> {
         SubtitleWidget('直接展示 日'),
         Container(
           height: 350,
-          child: DayPicker(
-              selectedDate: _date,
-              currentDate: DateTime.now(),
-              onChanged: (date) => setState(() => _date = date),
+          child: CalendarDatePicker(
+            initialDate: DateTime.now(),
+              initialCalendarMode: DatePickerMode.day,
+              currentDate: _date,
+              onDateChanged: (date) => setState(() => _date = date),
               firstDate: DateTime(1989),
               lastDate: DateTime(2089),
-              displayedMonth: DateTime.now()),
+          ),
         ),
         SubtitleWidget('直接展示 月'),
         SubtitleWidget('A scrollable list of months to allow picking a month.'),
         Container(
           height: 350,
-          child: MonthPicker(
-            selectedDate: _date,
-            onChanged: (date) => setState(() => _date = date),
+          child: CalendarDatePicker(
+            initialCalendarMode: DatePickerMode.year,
+            initialDate: DateTime.now(),
+            currentDate: _date,
+            onDateChanged: (date) => setState(() => _date = date),
             firstDate: DateTime(1989),
             lastDate: DateTime(2089),
           ),

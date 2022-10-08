@@ -27,7 +27,7 @@ class _TimerWidgetState extends State<TimerWidget> {
     return Column(
       children: <Widget>[
         MainTitleWidget('One Time Timer'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Timer(Duration(seconds: 3), () {
               setState(() => oneTimeResult = ' Show Result');
@@ -36,7 +36,7 @@ class _TimerWidgetState extends State<TimerWidget> {
           child: Text('等待3秒后显示结果 $oneTimeResult'),
         ),
         MainTitleWidget('Periodic Timer'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             timer = Timer.periodic(Duration(seconds: 1), (timer) {
               setState(() {
@@ -49,7 +49,7 @@ class _TimerWidgetState extends State<TimerWidget> {
         Text('Show count $count'),
         MainTitleWidget('倒计时'),
         Text(countdownTime(seconds)),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             var now = DateTime.now();
             var twoHours = now.add(Duration(minutes: 2)).difference(now);

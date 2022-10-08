@@ -12,7 +12,7 @@ class ProviderStateWidget extends StatelessWidget {
     return Column(
       children: [
         MainTitleWidget('Provider基本使用'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -26,7 +26,7 @@ class ProviderStateWidget extends StatelessWidget {
           child: Text('Provider.of获取数据'),
         ),
         MainTitleWidget('Provider Consumer'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -40,7 +40,7 @@ class ProviderStateWidget extends StatelessWidget {
           child: Text('通过Consumer获取数据'),
         ),
         MainTitleWidget('Provider Selector'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -54,7 +54,7 @@ class ProviderStateWidget extends StatelessWidget {
           child: Text('通过Selector获取数据'),
         ),
         MainTitleWidget('Provider'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -68,7 +68,7 @@ class ProviderStateWidget extends StatelessWidget {
           child: Text('综合示例'),
         ),
         MainTitleWidget('Provider不在App顶层共享跨页面数据'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,

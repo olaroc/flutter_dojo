@@ -76,9 +76,10 @@ class _Login2State extends State<Login2> with TickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Expanded(
-                        child: FlatButton(
-                          splashColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
+                        child: TextButton(
+                          style: ButtonStyle(
+                            overlayColor: MaterialStateProperty.all(Colors.transparent),
+                          ),
                           onPressed: null,
                           child: Text(
                             'Existing',
@@ -87,9 +88,10 @@ class _Login2State extends State<Login2> with TickerProviderStateMixin {
                         ),
                       ),
                       Expanded(
-                        child: FlatButton(
-                          splashColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
+                        child: TextButton(
+                          style: ButtonStyle(
+                            overlayColor: MaterialStateProperty.all(Colors.transparent),
+                          ),
                           onPressed: null,
                           child: Text(
                             'New',
@@ -265,7 +267,7 @@ class _SignUpPageState extends State<SignUpPage> {
       padding: EdgeInsets.only(top: 23),
       child: Stack(
         alignment: Alignment.topCenter,
-        overflow: Overflow.visible,
+       clipBehavior: Clip.none,
         children: <Widget>[
           Container(
               decoration: BoxDecoration(

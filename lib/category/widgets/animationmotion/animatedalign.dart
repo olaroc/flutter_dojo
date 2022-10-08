@@ -34,7 +34,7 @@ class _AnimatedAlignWidgetState extends State<AnimatedAlignWidget> {
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => _changeAlignment(),
           child: Text('Change Align'),
         )

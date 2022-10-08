@@ -85,8 +85,10 @@ class _StepperWidgetState extends State<StepperWidget> {
             controlsBuilder: (_, ControlsDetails details) {
               return Row(
                 children: <Widget>[
-                  RaisedButton(
-                    color: Colors.red,
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                    ),
                     onPressed: details.onStepContinue,
                     child: Row(
                       children: <Widget>[
@@ -99,8 +101,10 @@ class _StepperWidgetState extends State<StepperWidget> {
                     ),
                   ),
                   SizedBox(width: 10),
-                  RaisedButton(
-                    color: Colors.blue,
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                    ),
                     onPressed: details.onStepContinue,
                     child: Row(
                       children: <Widget>[

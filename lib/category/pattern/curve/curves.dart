@@ -21,7 +21,7 @@ class _CurvesWidgetState extends State<CurvesWidget> {
         setCurve(Curves.easeInCirc),
         setCurve(SinCurve()),
         setCurve(SawTooth(3)),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() => padding = padding == 0 ? 200 : 0.0);
           },

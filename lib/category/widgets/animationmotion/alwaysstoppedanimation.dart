@@ -47,7 +47,7 @@ class _AlwaysStoppedAnimationWidgetState extends State<AlwaysStoppedAnimationWid
             );
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             if (controller.isCompleted) {
               controller.reverse();

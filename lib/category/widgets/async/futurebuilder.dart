@@ -55,7 +55,7 @@ class _FutureBuilderWidgetState extends State<FutureBuilderWidget> {
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() {
               isClick = !isClick;

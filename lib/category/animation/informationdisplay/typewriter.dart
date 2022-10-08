@@ -34,7 +34,7 @@ class _TypewriterWidgetState extends State<TypewriterWidget> with SingleTickerPr
             );
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             if (controller.status == AnimationStatus.completed) {
               controller.reverse();

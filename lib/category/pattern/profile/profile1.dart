@@ -268,10 +268,12 @@ class ProfileCardHead extends StatelessWidget {
                 ButtonTheme(
                   minWidth: 50,
                   height: 25,
-                  child: RaisedButton(
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
                     onPressed: () {},
                     child: Text(

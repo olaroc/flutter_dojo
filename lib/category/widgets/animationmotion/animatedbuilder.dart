@@ -44,7 +44,7 @@ class _AnimatedBuilderWidgetState extends State<AnimatedBuilderWidget> with Sing
             );
           },
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             if (_controller.isCompleted) {
               _controller.reverse();

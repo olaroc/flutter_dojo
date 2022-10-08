@@ -63,15 +63,17 @@ class Login1Widget extends StatelessWidget {
               vertical: 8,
               horizontal: 30,
             ),
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
               child: Text(
                 '登录',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.redAccent,
               onPressed: () {},
             ),
           ),

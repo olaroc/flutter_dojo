@@ -10,8 +10,8 @@ class BuilderWidget extends StatelessWidget {
           MainTitleWidget('在当前上下文创建Context环境'),
           Builder(
             builder: (context) => Center(
-              child: RaisedButton(
-                onPressed: () => Scaffold.of(context).showSnackBar(SnackBar(content: Text('Context'))),
+              child: ElevatedButton(
+                onPressed: () => ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Context'))),
                 child: Text('Set Context'),
               ),
             ),
@@ -25,7 +25,7 @@ class BuilderWidget extends StatelessWidget {
             child: Center(
               child: Builder(
                 builder: (context) {
-                  return RaisedButton(
+                  return ElevatedButton(
                     child: Text('Send'),
                     onPressed: () {
                       MyNotification('MyNotification').dispatch(context);

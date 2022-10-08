@@ -38,7 +38,7 @@ class _AnimatedPaddingWidgetState extends State<AnimatedPaddingWidget> {
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: _changePadding,
           child: Text('change padding'),
         ),

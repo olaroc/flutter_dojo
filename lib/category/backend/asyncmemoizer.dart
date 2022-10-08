@@ -31,7 +31,7 @@ class _AsyncMemoizerWidgetState extends State<AsyncMemoizerWidget> {
             ),
           ],
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => setState(() {}),
           child: Text('Fetch Data'),
         ),

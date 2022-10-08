@@ -8,15 +8,15 @@ class CupertinoTimerPickerWidget extends StatelessWidget {
     return ListView(
       children: <Widget>[
         MainTitleWidget('Picker基本使用'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => _showCupertinoPicker(context),
           child: Text('CupertinoPicker'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => _showCupertinoDatePicker(context),
           child: Text('CupertinoDatePicker'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => _showCupertinoTimerPicker(context),
           child: Text('CupertinoTimerPicker'),
         ),

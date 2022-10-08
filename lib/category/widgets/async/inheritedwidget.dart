@@ -39,7 +39,7 @@ class Widget3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('build Widget3');
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: () {
         RootContainer.ofNoBuild(context).incrementCounter();
       },

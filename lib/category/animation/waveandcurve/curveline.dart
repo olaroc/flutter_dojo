@@ -47,7 +47,7 @@ class _CurveLineWidgetState extends State<CurveLineWidget> with SingleTickerProv
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: startPathMotion,
           child: Text('Start'),
         ),
@@ -60,7 +60,7 @@ class _CurveLineWidgetState extends State<CurveLineWidget> with SingleTickerProv
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: startPathMotion,
           child: Text('Start'),
         ),

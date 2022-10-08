@@ -116,13 +116,13 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
         ButtonBar(
           alignment: MainAxisAlignment.start,
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 setState(() => _addItem());
               },
               child: Text('Add new item'),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 setState(() => _removeItem());
               },

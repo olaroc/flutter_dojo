@@ -26,7 +26,7 @@ class _FormWidgetState extends State<FormWidget> {
               TextFormField(),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {},
                   child: Text('Submit'),
                 ),
@@ -77,7 +77,7 @@ class _FormWidgetState extends State<FormWidget> {
                 onSaved: (value) => email = value,
               ),
               SizedBox(height: 10),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: validateInputs,
                 child: Text('Validate'),
               )
@@ -102,11 +102,11 @@ class _FormWidgetState extends State<FormWidget> {
       builder: (context) => AlertDialog(
         title: Text('Exit the page?'),
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             child: Text('No'),
             onPressed: () => Navigator.pop(context, false),
           ),
-          FlatButton(
+          TextButton(
             child: Text('Yes'),
             onPressed: () => Navigator.pop(context, true),
           ),

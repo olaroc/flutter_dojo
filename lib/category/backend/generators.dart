@@ -32,7 +32,7 @@ class _GeneratorsWidgetState extends State<GeneratorsWidget> {
           MainTitleWidget('迭代器生成器-sync*'),
           SubtitleWidget('同步生成Iterable'),
           Text(iterableText),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               setState(() => iterableText = generateIterable().join(','));
             },
@@ -41,7 +41,7 @@ class _GeneratorsWidgetState extends State<GeneratorsWidget> {
           MainTitleWidget('流生成器-async*'),
           SubtitleWidget('异步生成Stream，常用于不断产生Stream事件'),
           Text(streamText),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               stream = generateStream().listen((event) {
                 setState(() => streamText += event.toString());
@@ -52,7 +52,7 @@ class _GeneratorsWidgetState extends State<GeneratorsWidget> {
           MainTitleWidget('递归优化-yield*'),
           SubtitleWidget('配合sync*'),
           Text(iterableYieldText),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               setState(() => iterableYieldText = generateYieldIterable(10).join(','));
             },
@@ -60,7 +60,7 @@ class _GeneratorsWidgetState extends State<GeneratorsWidget> {
           ),
           SubtitleWidget('配合async*'),
           Text(streamYieldText),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               streamYield = generateYieldStream(10).listen((event) {
                 setState(() => streamYieldText += event.toString());

@@ -13,7 +13,7 @@ class StateManagementWidget extends StatelessWidget {
 class ViewController extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: () {
         final DataModel model = DataModel.of(context);
         DataModel.update(context, DataModel(value: model.value + 1));

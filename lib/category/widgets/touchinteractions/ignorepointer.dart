@@ -22,7 +22,7 @@ class _IgnorePointerWidgetState extends State<IgnorePointerWidget> {
             }),
         IgnorePointer(
           ignoring: ignoreTouch,
-          child: RaisedButton(
+          child: ElevatedButton(
             onPressed: () {},
             child: Text('IgnorePointer'),
           ),

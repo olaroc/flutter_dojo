@@ -29,7 +29,7 @@ class _TestAnim1WidgetState extends State<TestAnim1Widget> with SingleTickerProv
             child: CardStack(controller),
           ),
         ),
-        FlatButton(
+        TextButton(
           onPressed: () {
             controller.forward();
           },

@@ -34,7 +34,7 @@ class DraggableScrollableSheetWidget extends StatelessWidget {
                         FlutterLogo(
                           size: 100,
                         ),
-                        RaisedButton(
+                        ElevatedButton(
                           onPressed: () => DraggableScrollableActuator.reset(context),
                           child: Text('close'),
                         ),

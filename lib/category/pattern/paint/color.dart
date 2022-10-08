@@ -28,7 +28,7 @@ class _ColorWidgetState extends State<ColorWidget> {
               ),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               setState(() {});
             },

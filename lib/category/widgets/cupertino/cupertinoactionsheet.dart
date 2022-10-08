@@ -10,7 +10,7 @@ class CupertinoActionSheetWidget extends StatelessWidget {
       children: <Widget>[
         MainTitleWidget('ActionSheet基本使用'),
         SubtitleWidget('CupertinoActionSheet: A button typically used in a [CupertinoActionSheet]'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => showActionSheet(context),
           child: Text('Show ActionSheet'),
         ),

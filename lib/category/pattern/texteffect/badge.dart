@@ -7,7 +7,7 @@ class BadgeWidget extends StatelessWidget {
       children: <Widget>[
         Stack(
           alignment: Alignment.topCenter,
-          overflow: Overflow.visible,
+         clipBehavior: Clip.none,
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class BadgeWidget extends StatelessWidget {
         SizedBox(height: 40),
         Stack(
           alignment: Alignment.topCenter,
-          overflow: Overflow.visible,
+         clipBehavior: Clip.none,
           children: <Widget>[
             Container(
               decoration: BoxDecoration(

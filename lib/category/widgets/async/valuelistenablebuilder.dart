@@ -33,7 +33,7 @@ class _ValueListenableBuilderWidgetState extends State<ValueListenableBuilderWid
         SizedBox(height: 20),
         Text('Click without setState $_counter'),
         SizedBox(height: 20),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             _incrementCounter();
           },

@@ -16,7 +16,7 @@ class _ImplicitlyAnimatedWidgetWidgetState extends State<ImplicitlyAnimatedWidge
         AnimatedDecoratedBox(
           duration: duration,
           decoration: BoxDecoration(color: _decorationColor),
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {
               setState(() => _decorationColor = Colors.red);
             },

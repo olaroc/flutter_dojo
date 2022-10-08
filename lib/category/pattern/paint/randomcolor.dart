@@ -39,7 +39,7 @@ class _RandomColorWidgetState extends State<RandomColorWidget> {
             height: 100,
             color: Color(0xFFFFFFFF & Random().nextInt(0xFFFFFFFF)),
           ),
-          RaisedButton(onPressed: () => setState(() {}), child: Text('Change Color')),
+          ElevatedButton(onPressed: () => setState(() {}), child: Text('Change Color')),
           Container(
             width: 100,
             height: 100,

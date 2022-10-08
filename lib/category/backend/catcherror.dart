@@ -23,7 +23,7 @@ class _CatchErrorWidgetState extends State<CatchErrorWidget> {
       child: Column(
         children: <Widget>[
           MainTitleWidget('Catch Dart Error'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               try {
                 throw Exception('new exception');
@@ -35,7 +35,7 @@ class _CatchErrorWidgetState extends State<CatchErrorWidget> {
           ),
           Text(msgDart),
           MainTitleWidget('Catch Flutter Layout Error'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               throw Exception('flutter exception');
             },
@@ -43,7 +43,7 @@ class _CatchErrorWidgetState extends State<CatchErrorWidget> {
           ),
           Text(msgFlutter, maxLines: 5),
           MainTitleWidget('Catch Future Error'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Future.error('Future Error').then((v) {
                 throw Exception('Another Future Error');

@@ -23,21 +23,21 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
         children: <Widget>[
           MainTitleWidget('AnimatedContainer基本使用'),
           SubtitleWidget('在改变Container属性的时候添加动画效果'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               size = Random().nextInt(300).toDouble();
               setState(() {});
             },
             child: Text('Change Size'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               color = Colors.grey[100 + 100 * Random().nextInt(8)];
               setState(() {});
             },
             child: Text('Change Color'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               radius = 100 * Random().nextDouble();
               setState(() {});

@@ -35,7 +35,7 @@ class FirstPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('Show ${_counter._countNum}'),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -70,7 +70,7 @@ class _SecondPageState extends State<SecondPage> {
       ),
       body: Container(
         child: Center(
-          child: RaisedButton(
+          child: ElevatedButton(
             onPressed: () => counter.increment(),
             child: Text('Add'),
           ),

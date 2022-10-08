@@ -31,7 +31,7 @@ class _AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> {
               child: FlutterLogo(),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             child: Text('Change Opacity'),
             onPressed: _changeOpacity,
           ),

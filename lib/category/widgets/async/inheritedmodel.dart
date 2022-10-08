@@ -78,7 +78,7 @@ class Add extends StatelessWidget {
   Widget build(BuildContext context) {
     final root = InheritedRoot.of(context);
     return Container(
-      child: RaisedButton(
+      child: ElevatedButton(
         onPressed: root.add,
         child: Text('+'),
       ),
@@ -92,7 +92,7 @@ class Minus extends StatelessWidget {
     final root = InheritedRoot.of(context);
 
     return Container(
-      child: RaisedButton(
+      child: ElevatedButton(
         onPressed: root.minus,
         child: Text('-'),
       ),

@@ -21,7 +21,7 @@ class View1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CustomModel model = ModelBinding.of<CustomModel>(context);
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: () {
         ModelBinding.update<CustomModel>(context, CustomModel(value: model.value + 1));
       },

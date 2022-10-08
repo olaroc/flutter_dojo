@@ -21,7 +21,7 @@ class _SqfliteWidgetState extends State<SqfliteWidget> {
         Row(
           children: <Widget>[
             Expanded(child: Text('Insert a Student')),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 final student = Student(1, 'XuYisheng', 18);
                 insertStudent(student);
@@ -33,7 +33,7 @@ class _SqfliteWidgetState extends State<SqfliteWidget> {
         Row(
           children: <Widget>[
             Expanded(child: Text('Query in DB')),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => setState(() {
                 queryStudents().then((list) {
                   String str = '';
@@ -55,7 +55,7 @@ class _SqfliteWidgetState extends State<SqfliteWidget> {
                 controller: controller,
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 updateStudent(Student(1, controller.text, 18));
               },
@@ -66,7 +66,7 @@ class _SqfliteWidgetState extends State<SqfliteWidget> {
         Row(
           children: <Widget>[
             Expanded(child: Text('Delete data')),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 deleteStudent(1);
               },

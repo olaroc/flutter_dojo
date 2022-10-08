@@ -20,7 +20,7 @@ class _AnimatedModalBarrierWidgetState extends State<AnimatedModalBarrierWidget>
         children: [
           MainTitleWidget('AnimatedModalBarrier基本使用'),
           SubtitleWidget('给模态View添加背景'),
-          RaisedButton(
+          ElevatedButton(
             child: const Text('Open Modal View'),
             onPressed: () {
               Navigator.of(context).push(MyPageRoute(
@@ -97,7 +97,7 @@ class _ModalPage extends StatelessWidget {
           children: [
             const Text('Modal View'),
             const SizedBox(height: 16),
-            RaisedButton(
+            ElevatedButton(
               child: const Text('Close view'),
               onPressed: () {
                 Navigator.of(context).pop();

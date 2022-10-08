@@ -191,11 +191,13 @@ class Page extends StatelessWidget {
   });
 
   Widget creatButton(BuildContext context, String txt, IconData iconName, String type) {
-    return RaisedButton.icon(
+    return ElevatedButton.icon(
       onPressed: () {},
-      elevation: 10.0,
-      color: Colors.black26,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.horizontal(left: Radius.circular(20.0))),
+      style: ElevatedButton.styleFrom(
+        elevation: 10.0,
+        backgroundColor: Colors.black26,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.horizontal(left: Radius.circular(20.0))),
+      ),
       icon: Icon(iconName, color: Colors.white, size: 14.0),
       label: Text(
         txt,

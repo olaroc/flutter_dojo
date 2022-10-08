@@ -54,7 +54,7 @@ class _GiftWidgetState extends State<GiftWidget> with SingleTickerProviderStateM
             },
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             controller.repeat().timeout(Duration(milliseconds: 3000), onTimeout: () {
               controller.stop(canceled: true);

@@ -61,15 +61,15 @@ class _IsolateWidgetState extends State<IsolateWidget> with SingleTickerProvider
           flex: 2,
           child: Column(
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () => countLargeNum(),
                 child: Text('在UI主isolate中进行耗时计算'),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () => countLargeNumWithIsolate(),
                 child: Text('开启新的isolate进行计算'),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () => countLargeNumWithCompute(),
                 child: Text('使用Compute进行计算'),
               ),

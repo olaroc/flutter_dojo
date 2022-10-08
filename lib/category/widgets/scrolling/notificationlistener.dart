@@ -100,7 +100,7 @@ class _NotificationListenerWidgetState extends State<NotificationListenerWidget>
                 Text('自定义Msg: $msg, \n父Widget是否收到消息: ${msgParent.isEmpty ? false : true}'),
                 Builder(
                   builder: (BuildContext context) {
-                    return RaisedButton(
+                    return ElevatedButton(
                       onPressed: () {
                         msg = '';
                         msgParent = '';

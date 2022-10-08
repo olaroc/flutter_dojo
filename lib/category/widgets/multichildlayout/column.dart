@@ -35,15 +35,15 @@ class _ColumnWidgetState extends State<ColumnWidget> {
             child: Column(
               mainAxisAlignment: mainAlignSelection,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('I  t  e  m  1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('I t e m 3'),
                 ),
@@ -77,11 +77,11 @@ class _ColumnWidgetState extends State<ColumnWidget> {
                   height: 100,
                   child: Text('Item1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item3'),
                 ),
@@ -98,15 +98,15 @@ class _ColumnWidgetState extends State<ColumnWidget> {
             child: Column(
               verticalDirection: verticalDirectionSelection,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item1'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item2'),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {},
                   child: Text('Item3'),
                 ),

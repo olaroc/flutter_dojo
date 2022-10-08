@@ -39,7 +39,7 @@ class _HeroWidgetState extends State<HeroWidget> {
               ),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
@@ -69,7 +69,7 @@ class _HeroWidgetState extends State<HeroWidget> {
               ),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
@@ -95,7 +95,7 @@ class _HeroWidgetState extends State<HeroWidget> {
               ),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
@@ -115,7 +115,7 @@ class _HeroWidgetState extends State<HeroWidget> {
               ),
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,

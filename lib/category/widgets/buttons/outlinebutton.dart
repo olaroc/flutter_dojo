@@ -7,12 +7,12 @@ class OutlineButtonWidget extends StatelessWidget {
     return ListView(
       children: <Widget>[
         MainTitleWidget('OutlineButton基本使用'),
-        OutlineButton(
+        OutlinedButton(
           child: Text('OutlineButton'),
           onPressed: () {},
         ),
         MainTitleWidget('OutlineButton with icon'),
-        OutlineButton.icon(
+        OutlinedButton.icon(
           icon: Icon(
             Icons.input,
             size: 25.0,
@@ -22,16 +22,18 @@ class OutlineButtonWidget extends StatelessWidget {
           onPressed: () {},
         ),
         MainTitleWidget('OutlineButton with custom border'),
-        OutlineButton(
+        OutlinedButton(
           child: Text('OutlineButton'),
           onPressed: () {},
-          borderSide: BorderSide(
-            color: Colors.red,
-            width: 2,
-            style: BorderStyle.solid,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+          style: OutlinedButton.styleFrom(
+            side: BorderSide(
+              color: Colors.red,
+              width: 2,
+              style: BorderStyle.solid,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
           ),
         ),
       ],

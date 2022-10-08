@@ -47,13 +47,17 @@ class ThemeWidget extends StatelessWidget {
           ),
           child: Row(
             children: <Widget>[
-              FlatButton(
-                color: Colors.red,
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.red
+                ),
                 onPressed: () {},
                 child: Text('Theme1'),
               ),
-              FlatButton(
-                color: Colors.blue,
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
                 onPressed: () {},
                 child: Text('Theme2'),
               )

@@ -9,14 +9,14 @@ class AlertDialogWidget extends StatelessWidget {
       children: <Widget>[
         MainTitleWidget('AlertDialog基本使用'),
         SubtitleWidget('通过showDialog方法调用'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showAlertDialog(context);
           },
           child: Text('Show AlertDialog'),
         ),
         SubtitleWidget('通过showGeneralDialog方法调用，无MaterialDesign风格'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showCustomDialog<bool>(
               context: context,
@@ -24,11 +24,11 @@ class AlertDialogWidget extends StatelessWidget {
                 return AlertDialog(
                   content: Text('Dialog Title'),
                   actions: <Widget>[
-                    FlatButton(
+                    TextButton(
                       child: Text('Cancel'),
                       onPressed: () => Navigator.of(context).pop(),
                     ),
-                    FlatButton(
+                    TextButton(
                       child: Text('OK'),
                       onPressed: () => Navigator.of(context).pop(true),
                     ),
@@ -41,7 +41,7 @@ class AlertDialogWidget extends StatelessWidget {
         ),
         MainTitleWidget('修改Dialog宽度'),
         SubtitleWidget('showDialog方法中给对话框设置了宽度限制，所以需要先使用UnconstrainedBox取消该限制'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showCustomWidthDialog(context);
           },
@@ -51,7 +51,7 @@ class AlertDialogWidget extends StatelessWidget {
         SubtitleWidget('showDialog方法调用后，Context改变为新的Layer的Content，导致原有页面的setState失效'),
         SubtitleWidget('使用StatefulBuilder'),
         SubtitleWidget('A platonic widget that both has state and calls a closure to obtain its child widget.'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showDialogModify(context);
           },
@@ -59,14 +59,14 @@ class AlertDialogWidget extends StatelessWidget {
         ),
         SubtitleWidget('新建StatefulWidget作为Dialog的Content'),
         SubtitleWidget('或者将需要改变的Widget单独抽取出来'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showModifyDialogWithNew(context);
           },
           child: Text('Show Dialog'),
         ),
         SubtitleWidget('使用Element的markNeedsBuild标记'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showDialogModify2(context);
           },
@@ -85,7 +85,7 @@ class AlertDialogWidget extends StatelessWidget {
           title: Text('dialog title'),
           content: Text('dialog content'),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('Cancel'),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -139,7 +139,7 @@ class AlertDialogWidget extends StatelessWidget {
               content: Text('dialog content'),
               actions: <Widget>[
                 Text(show),
-                FlatButton(
+                TextButton(
                   child: Text('Change1'),
                   onPressed: () {
                     dialogState(() {
@@ -147,7 +147,7 @@ class AlertDialogWidget extends StatelessWidget {
                     });
                   },
                 ),
-                FlatButton(
+                TextButton(
                   child: Text('Change2'),
                   onPressed: () {
                     dialogState(() {
@@ -174,14 +174,14 @@ class AlertDialogWidget extends StatelessWidget {
           content: Text('dialog content'),
           actions: <Widget>[
             Text(show),
-            FlatButton(
+            TextButton(
               child: Text('Change1'),
               onPressed: () {
                 show = 'Change1';
                 (context as Element).markNeedsBuild();
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text('Change2'),
               onPressed: () {
                 show = 'Change2';
@@ -260,7 +260,7 @@ class NewDialogLayerWithStateState extends State<NewDialogLayerWithState> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(show),
-              FlatButton(
+              TextButton(
                 child: Text('Change1'),
                 onPressed: () {
                   setState(() {
@@ -268,7 +268,7 @@ class NewDialogLayerWithStateState extends State<NewDialogLayerWithState> {
                   });
                 },
               ),
-              FlatButton(
+              TextButton(
                 child: Text('Change2'),
                 onPressed: () {
                   setState(() {

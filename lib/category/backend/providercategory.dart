@@ -66,14 +66,14 @@ class CatalogChangeNotifierProvider extends StatelessWidget {
               'ChangeNotifierProvider管理了一个可变化的数据，可以在数据变化的时候通知观察者，但是会导致整个页面rebuild \n${Provider.of<ChangeNotifyModel>(context).value}',
               textAlign: TextAlign.center,
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Scaffold(
                       body: Center(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () => Provider.of<ChangeNotifyModel>(context, listen: false).increment(),
                           child: Text('add'),
                         ),
@@ -108,7 +108,7 @@ class CatalogConsumer extends StatelessWidget {
                 );
               },
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -117,7 +117,7 @@ class CatalogConsumer extends StatelessWidget {
                       builder: (context, model, child) {
                         return Scaffold(
                           body: Center(
-                            child: RaisedButton(
+                            child: ElevatedButton(
                               onPressed: () => model.increment(),
                               child: Text('add'),
                             ),
@@ -149,14 +149,14 @@ class CatalogListenableProvider extends StatelessWidget {
               'ListenableProvider管理了一个可变化的数据，可以在数据变化的时候通知观察者，但是会导致整个页面rebuild，它与ChangeNotifierProvider的区别是，ListenableProvider不会手动调用dispose \n${Provider.of<ChangeNotifyModel>(context).value}',
               textAlign: TextAlign.center,
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Scaffold(
                       body: Center(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () => Provider.of<ChangeNotifyModel>(context, listen: false).increment(),
                           child: Text('add'),
                         ),
@@ -186,14 +186,14 @@ class CatalogValueListenableProvider extends StatelessWidget {
               'ValueListenableProvider返回的对象必须是ValueNotifier<T>的子类，ValueNotifier是我们前面多次提到的ChangeNotifier的子类，在改变value时，自动调用了notifyListeners \n${Provider.of<ValueNotifyModel>(context).value}',
               textAlign: TextAlign.center,
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Scaffold(
                       body: Center(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             ValueNotifyModel oldModel = Provider.of<ValueNotifyModel>(context, listen: false);
                             ValueNotifyModel newModel = ValueNotifyModel(oldModel.value + 1);
@@ -228,14 +228,14 @@ class CatalogStreamProvider extends StatelessWidget {
               'StreamProvider与Stream配合使用 \n${Provider.of<int>(context)}',
               textAlign: TextAlign.center,
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Scaffold(
                       body: Center(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () => ProviderStream().increment(),
                           child: Text('add'),
                         ),
@@ -322,7 +322,7 @@ class CatalogSelector extends StatelessWidget {
             ),
             CatalogSelectorItem1(),
             CatalogSelectorItem2(),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -332,11 +332,11 @@ class CatalogSelector extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            RaisedButton(
+                            ElevatedButton(
                               onPressed: () => Provider.of<SelectorModel>(context, listen: false).increment1(),
                               child: Text('add value 1'),
                             ),
-                            RaisedButton(
+                            ElevatedButton(
                               onPressed: () => Provider.of<SelectorModel>(context, listen: false).increment2(),
                               child: Text('add value 2'),
                             ),
@@ -392,7 +392,7 @@ class CatalogSelect extends StatelessWidget {
             ),
             CatalogSelectItem1(),
             CatalogSelectItem2(),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -402,11 +402,11 @@ class CatalogSelect extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            RaisedButton(
+                            ElevatedButton(
                               onPressed: () => Provider.of<SelectorModel>(context, listen: false).increment1(),
                               child: Text('add value 1'),
                             ),
-                            RaisedButton(
+                            ElevatedButton(
                               onPressed: () => Provider.of<SelectorModel>(context, listen: false).increment2(),
                               child: Text('add value 2'),
                             ),
@@ -522,7 +522,7 @@ class CatalogProxyProvider extends StatelessWidget {
               ),
               Consumer<SubmitModel>(
                 builder: (context, model, child) {
-                  return RaisedButton(
+                  return ElevatedButton(
                     onPressed: model.submit,
                     child: Text("submit image"),
                   );

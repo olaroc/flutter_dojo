@@ -9,18 +9,18 @@ class SnackBarWidget extends StatelessWidget {
       children: <Widget>[
         MainTitleWidget('SnackBar基本使用'),
         SubtitleWidget('SnackBarAction: A button for a [SnackBar], known as an \"action\".'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             final snackBar = SnackBar(
               content: Text('basic snackbar'),
               backgroundColor: Colors.blue,
               duration: Duration(seconds: 3),
             );
-            Scaffold.of(context).showSnackBar(snackBar);
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
           },
           child: Text('Show Snackbar'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             final snackBar = SnackBar(
               content: Text(
@@ -35,7 +35,7 @@ class SnackBarWidget extends StatelessWidget {
               duration: Duration(seconds: 3),
               //animation,
             );
-            Scaffold.of(context).showSnackBar(snackBar);
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
           },
           child: Text('Show snackbar with action'),
         )

@@ -47,7 +47,7 @@ class _AnimatedDefaultTextStyleWidgetState extends State<AnimatedDefaultTextStyl
           ),
           curve: Curves.ease,
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             setState(() {
               style = TextStyle(

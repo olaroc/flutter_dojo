@@ -36,7 +36,7 @@ class ChildWidget1 extends StatelessWidget {
         children: <Widget>[
           Text('Child1', style: style),
           Text('Model data: ${model.value}', style: style),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => model.add(),
             child: Text('add'),
           ),
@@ -60,7 +60,7 @@ class ChildWidget2 extends StatelessWidget {
           Text('Child2', style: style),
           Text('Model data: ${model.value}', style: style),
           Text('watch: ${context.watch<TestModel>().value}', style: style),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => Provider.of<TestModel>(context, listen: false).add(),
             child: Text('add'),
           ),

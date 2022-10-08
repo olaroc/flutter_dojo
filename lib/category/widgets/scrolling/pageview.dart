@@ -34,7 +34,7 @@ class _PageViewWidgetState extends State<PageViewWidget> {
             ],
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => setState(() => isVertical = !isVertical),
           child: Text('Change Direction'),
         ),

@@ -28,7 +28,7 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
           DatePickerMode.values,
           (value) => setState(() => pickMode = value),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => showMyDatePicker(context),
           child: Text('Open DatePicker'),
         ),

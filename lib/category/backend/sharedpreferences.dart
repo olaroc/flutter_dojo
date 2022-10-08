@@ -26,7 +26,7 @@ class _SharedPreferencesWidgetState extends State<SharedPreferencesWidget> {
             controller: _scoreController,
             decoration: InputDecoration(hintText: 'Score'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               _saveSharedPreferences(
                 _usernameController.value.text.toString(),
@@ -35,13 +35,13 @@ class _SharedPreferencesWidgetState extends State<SharedPreferencesWidget> {
             },
             child: Text('Save'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               _readSharedPreferences();
             },
             child: Text('Read'),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
               _clearSharedPreferences();
             },

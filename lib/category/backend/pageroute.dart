@@ -28,7 +28,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
     return ListView(
       children: <Widget>[
         MainTitleWidget('MaterialPageRoute'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -44,7 +44,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
         Text(show),
         MainTitleWidget('静态路由'),
         SubtitleWidget('静态路由可以通过RouteSettings传值'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.pushNamed(context, '/page2', arguments: 'arguments from named Navigator');
           },
@@ -52,7 +52,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
         ),
         MainTitleWidget('路由替换'),
         SubtitleWidget('pushReplacement()、pushReplacementNamed()、popAndPushNamed()会在移除当前栈顶Widget的同时，入栈新的Widget'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.pushReplacement(
               context,
@@ -65,7 +65,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
         ),
         MainTitleWidget('路由移除'),
         SubtitleWidget('pushAndRemoveUntil()、pushNamedAndRemoveUntil()会移除当前栈的所有Widget，再入栈新的Widget'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.pushAndRemoveUntil(
               context,
@@ -84,7 +84,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
           ['Scale', 'Slide', 'Fade', 'Rotate', 'Path', 'Compose'],
           (value) => setState(() => transitionSelection = value),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -101,7 +101,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
           child: Text('Goto 自定义PageRoute Page2'),
         ),
         SubtitleWidget('通过设置secondaryAnimation实现进场和出场动画'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -137,21 +137,21 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
           child: Text('Page2进场出场动画'),
         ),
         MainTitleWidget('通过GlobalKey<NavigatorState>保存NavigatorState'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             RouteManager.instance.push(MaterialPageRoute(builder: (context) => Page2('GlobalKey')));
           },
           child: Text('Goto Page2'),
         ),
         MainTitleWidget('通过NavigatorObserver保存NavigatorState'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             NavigatorManager.getInstance().push('/page2', (context) => Page2('NavigatorObserver'));
           },
           child: Text('Goto Page2'),
         ),
         MainTitleWidget('FullscreenDialog style page'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
@@ -166,7 +166,7 @@ class _PageRouteWidgetState extends State<PageRouteWidget> {
           child: Text('Goto FullscreenDialog Page'),
         ),
         MainTitleWidget('路由监听'),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             // 监听
             NavigatorManager.getInstance().streamController.stream.listen((value) {
@@ -276,13 +276,13 @@ class Page2 extends StatelessWidget {
           children: <Widget>[
             Text('from Page1: $valueFromPage1'),
             Text('from RouteSettings: $value'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Back to Page1 with value'),
               onPressed: () {
                 Navigator.pop(context, ['Page2 value1', 'Page2 value2']);
               },
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Goto new page'),
               onPressed: () {
                 Navigator.push(

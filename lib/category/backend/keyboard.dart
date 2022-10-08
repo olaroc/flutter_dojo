@@ -49,13 +49,13 @@ class _KeyboardWidgetState extends State<KeyboardWidget> with WidgetsBindingObse
       children: <Widget>[
         MainTitleWidget('软键盘'),
         TextField(focusNode: focusNode),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             dismissKeyboard(context);
           },
           child: Text('Close keyboard'),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             showKeyboard(context);
           },

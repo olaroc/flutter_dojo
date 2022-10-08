@@ -13,19 +13,25 @@ class ButtonBarWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             // Button集合
-            RaisedButton(
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.yellow,
+              ),
               child: Text('Item1'),
-              color: Colors.yellow,
               onPressed: () => {},
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Item2'),
-              color: Colors.red,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
               onPressed: () => {},
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Item3'),
-              color: Colors.blue,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+              ),
               onPressed: () => {},
             ),
           ],
@@ -39,15 +45,15 @@ class ButtonBarWidget extends StatelessWidget {
           ),
           child: ButtonBar(
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {},
                 child: Text("A"),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {},
                 child: Text("B"),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {},
                 child: Text("C"),
               ),

@@ -46,7 +46,7 @@ class _ScrollToPositionWidgetState extends State<ScrollToPositionWidget> {
             ),
           ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () => _scrollToPosition(10),
           child: Text('scroll to 10'),
         ),
